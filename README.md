@@ -9,7 +9,9 @@ Tested on macOS (Apple Silicon), and used Visual Studio Code.
 run the following code in terminal:
 ### Create and activate conda environment  
 conda create -n cityflow310 python=3.10 -y    
-conda activate cityflow310  
+conda activate cityflow310 
+pip install torch torchvision torchaudio  
+
 ### Install build tools  
 xcode-select --install  
 ### Install CMake (version should < 4)  
