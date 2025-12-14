@@ -7,12 +7,12 @@ I used CityFlow in my experiment, and CityFlow does not support the latest Pytho
 Tested on macOS (Apple Silicon), and used Visual Studio Code.  
 
 run the following code in terminal:
-## Create and activate conda environment  
+### Create and activate conda environment  
 conda create -n cityflow310 python=3.10 -y    
 conda activate cityflow310  
-## Install build tools  
+### Install build tools  
 xcode-select --install  
-## Install CMake (version should < 4)  
+### Install CMake (version should < 4)  
 conda install -n cityflow310 -c conda-forge "cmake<4" -y  
 cmake --version  
   
