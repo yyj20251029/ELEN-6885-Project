@@ -7,11 +7,11 @@
 - run the following code in terminal:
   - Create and activate conda environment:
     - ```bash  
-      conda create -n cityflow310 python=3.10 -y    
-      conda activate cityflow310  
-      pip install torch torchvision torchaudio  
-      pip install tqdm
-      ```
+    conda create -n cityflow310 python=3.10 -y    
+    conda activate cityflow310  
+    pip install torch torchvision torchaudio  
+    pip install tqdm
+    ```
 
 ### Install build tools  
 xcode-select --install  
