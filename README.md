@@ -1,6 +1,6 @@
 # ELEN-6885-Project
 - Deployed CityFlow in my experiments, and CityFlow does not support the latest Python verson. (Python 3.10 required.)   
-- Train and tested on macOS (Apple Silicon), and used Visual Studio Code.
+- Trained and tested on macOS (Apple Silicon), and used Visual Studio Code.
 - Experimental results can be found @ "cityflow_single_intersection/logs/{model_name}_{flow_name}"  
 
 ## Setup the environments:
