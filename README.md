@@ -5,21 +5,25 @@
 ## Setup the environments:
 - change directory to file "cityflow_single_intersection"
 - run the following code in terminal:
-  - Create and activate conda environment:
-    ```bash
-    # Create and activate conda environment:  
-    conda create -n cityflow310 python=3.10 -y    
-    conda activate cityflow310  
-    pip install torch torchvision torchaudio  
-    pip install tqdm
-    ```
+```bash
+# Create and activate conda environment:  
+conda create -n cityflow310 python=3.10 -y    
+conda activate cityflow310  
 
-### Install build tools  
+# Install Packages
+pip install torch torchvision torchaudio  
+pip install tqdm
+
+# Install build tools  
 xcode-select --install  
-### Install CMake (version should < 4)  
+
+# Install CMake (version should < 4)  
 conda install -n cityflow310 -c conda-forge "cmake<4" -y  
 cmake --version  
-  
+
+#   
 pip install -r requirements.txt  
 pip install git+https://github.com/cityflow-project/CityFlow.git  
 python -c "import cityflow; print('cityflow OK')"  
+```
+
