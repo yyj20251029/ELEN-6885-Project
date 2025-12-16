@@ -1,6 +1,6 @@
 # ELEN-6885-Project
 
-···bash
+```bash
 ELEN 6885 Project   
 
 Tested on macOS (Apple Silicon).  
