@@ -27,3 +27,32 @@ pip install git+https://github.com/cityflow-project/CityFlow.git
 python -c "import cityflow; print('cityflow OK')"  
 ```
 
+
+
+
+
+
+
+
+
+
+## CityFlow Single Intersection (2-phase, no turns)
+
+This project builds a minimal CityFlow simulation environment:
+- Single isolated intersection (N/S/E/W)
+- 1 incoming lane + 1 outgoing lane for each direction
+- Straight-only routes (no left/right turns)
+- Decision every second (1s)
+- Episode length: 3600 steps
+- min green = 3s, yellow = 1s (inserted by env state machine)
+- Traffic generation: per-second Bernoulli(p) per approach (max 1 vehicle / step / direction)
+  - Low p=0.061
+  - Medium p=0.100
+  - High p=0.139
+
+## File overview
+- cityflow_cfg/roadnet.json: road network + signal plan template
+- cityflow_cfg/config.json: CityFlow config (points to roadnet + flow)
+- scripts/gen_flow.py: generate flow JSON (low/medium/high)
+- envs/cityflow_single_intersection_env.py: reset()/step() with min-green + yellow state machine
+- run_sanity_check.py: run a fixed or random policy and print queues/throughput
