@@ -137,7 +137,7 @@ python scripts/gen_flow.py --p 0.139 --seed 4 --out cityflow_cfg/flows/flow_high
 python scripts/gen_flow.py --p 0.100 --seed 10 --out cityflow_cfg/flows/flow_medium_train.json
 ```
 
-## How to train the models (DQN & MP_DQN)
+## Train the models (DQN & MP_DQN)
 - run @ terminal
 ```bash
 # train DQN
