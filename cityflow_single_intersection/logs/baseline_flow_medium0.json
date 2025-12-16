@@ -1,0 +1,11 @@
+{
+  "flow_file": "flow_medium0.json",
+  "seed": 0,
+  "g_ns": 60,
+  "g_ew": 60,
+  "throughput": 1467,
+  "average_queue_length": 1.6861111111111111,
+  "average_waiting_time": 4.137695978186776,
+  "average_travel_time": 53.13974096796183,
+  "episode_length": 3600
+}

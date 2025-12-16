@@ -1,0 +1,11 @@
+{
+  "flow_file": "flow_low1.json",
+  "seed": 0,
+  "g_ns": 60,
+  "g_ew": 60,
+  "throughput": 884,
+  "average_queue_length": 1.0127777777777778,
+  "average_waiting_time": 4.124434389140271,
+  "average_travel_time": 52.34276018099548,
+  "episode_length": 3600
+}
