@@ -5,7 +5,7 @@
 
 ## Setup the environments:
 - change directory to file "cityflow_single_intersection"
-- run the following code in terminal:
+- run the following code @ terminal:
 ```bash
 # Create and activate conda environment:  
 conda create -n cityflow310 python=3.10 -y    
@@ -113,3 +113,35 @@ This project builds a minimal CityFlow simulation environment:
 - scripts/gen_flow.py: generate flow JSON (low/medium/high)
 - envs/cityflow_single_intersection_env.py: reset()/step() with min-green + yellow state machine
 - run_sanity_check.py: run a fixed or random policy and print queues/throughput
+
+## Generate the flow files @ "cityflow_single_intersection/cityflow_cfg/flows/"
+- run @ terminal
+```bash
+python scripts/gen_flow.py --p 0.061 --seed 0 --out cityflow_cfg/flows/flow_low0.json
+python scripts/gen_flow.py --p 0.100 --seed 0 --out cityflow_cfg/flows/flow_medium0.json
+python scripts/gen_flow.py --p 0.139 --seed 0 --out cityflow_cfg/flows/flow_high0.json
+python scripts/gen_flow.py --p 0.061 --seed 1 --out cityflow_cfg/flows/flow_low1.json
+python scripts/gen_flow.py --p 0.100 --seed 1 --out cityflow_cfg/flows/flow_medium1.json
+python scripts/gen_flow.py --p 0.139 --seed 1 --out cityflow_cfg/flows/flow_high1.json
+python scripts/gen_flow.py --p 0.061 --seed 2 --out cityflow_cfg/flows/flow_low2.json
+python scripts/gen_flow.py --p 0.100 --seed 2 --out cityflow_cfg/flows/flow_medium2.json
+python scripts/gen_flow.py --p 0.139 --seed 2 --out cityflow_cfg/flows/flow_high2.json
+python scripts/gen_flow.py --p 0.061 --seed 3 --out cityflow_cfg/flows/flow_low3.json
+python scripts/gen_flow.py --p 0.100 --seed 3 --out cityflow_cfg/flows/flow_medium3.json
+python scripts/gen_flow.py --p 0.139 --seed 3 --out cityflow_cfg/flows/flow_high3.json
+python scripts/gen_flow.py --p 0.061 --seed 4 --out cityflow_cfg/flows/flow_low4.json
+python scripts/gen_flow.py --p 0.100 --seed 4 --out cityflow_cfg/flows/flow_medium4.json
+python scripts/gen_flow.py --p 0.139 --seed 4 --out cityflow_cfg/flows/flow_high4.json
+
+# flow file for train
+python scripts/gen_flow.py --p 0.100 --seed 10 --out cityflow_cfg/flows/flow_medium_train.json
+```
+
+## How to train the models (DQN & MP_DQN)
+- run @ terminal
+```bash
+# train DQN
+python DQN.py train flow_medium_train.json
+# train MP_DQN
+python MP_DQN.py train flow_medium_train.json
+```
