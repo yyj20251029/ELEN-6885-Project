@@ -6,7 +6,7 @@
 - change directory to file "cityflow_single_intersection"
 - run the following code in terminal:
   - Create and activate conda environment:
-    - ```bash  
+    ```bash  
     conda create -n cityflow310 python=3.10 -y    
     conda activate cityflow310  
     pip install torch torchvision torchaudio  
