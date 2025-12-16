@@ -2,6 +2,7 @@
 - Deployed CityFlow in my experiments, and CityFlow does not support the latest Python verson. (Python 3.10 required.)   
 - Train and tested on macOS (Apple Silicon), and used Visual Studio Code.  
 
+## Setup the environments:
 run the following code in terminal:
 ### Create and activate conda environment  
 conda create -n cityflow310 python=3.10 -y    
