@@ -3,7 +3,8 @@
 - Train and tested on macOS (Apple Silicon), and used Visual Studio Code.  
 
 ## Setup the environments:
-run the following code in terminal:
+- change directory to file "cityflow_single_intersection"
+- run the following code in terminal:
 ### Create and activate conda environment  
 conda create -n cityflow310 python=3.10 -y    
 conda activate cityflow310  
