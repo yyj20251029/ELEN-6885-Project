@@ -1,6 +1,7 @@
 # ELEN-6885-Project
 - Deployed CityFlow in my experiments, and CityFlow does not support the latest Python verson. (Python 3.10 required.)   
-- Train and tested on macOS (Apple Silicon), and used Visual Studio Code.  
+- Train and tested on macOS (Apple Silicon), and used Visual Studio Code.
+- Experimental results can be found @ "cityflow_single_intersection/logs/{model_name}_{flow_name}"  
 
 ## Setup the environments:
 - change directory to file "cityflow_single_intersection"
@@ -27,6 +28,62 @@ pip install git+https://github.com/cityflow-project/CityFlow.git
 python -c "import cityflow; print('cityflow OK')"  
 ```
 
+## How to test @ terminal
+- result will be saved in "cityflow_single_intersection/logs/"
+- baseline test codes
+``` bash
+python baseline.py flow_low0.json
+python baseline.py flow_low1.json
+python baseline.py flow_low2.json
+python baseline.py flow_low3.json
+python baseline.py flow_low4.json
+python baseline.py flow_medium0.json
+python baseline.py flow_medium1.json
+python baseline.py flow_medium2.json
+python baseline.py flow_medium3.json
+python baseline.py flow_medium4.json
+python baseline.py flow_high0.json
+python baseline.py flow_high1.json
+python baseline.py flow_high2.json
+python baseline.py flow_high3.json
+python baseline.py flow_high4.json
+```
+- DQN test codes
+```bash
+python DQN.py test flow_low0.json
+python DQN.py test flow_low1.json
+python DQN.py test flow_low2.json
+python DQN.py test flow_low3.json
+python DQN.py test flow_low4.json
+python DQN.py test flow_medium0.json
+python DQN.py test flow_medium1.json
+python DQN.py test flow_medium2.json
+python DQN.py test flow_medium3.json
+python DQN.py test flow_medium4.json
+python DQN.py test flow_high0.json
+python DQN.py test flow_high1.json
+python DQN.py test flow_high2.json
+python DQN.py test flow_high3.json
+python DQN.py test flow_high4.json
+```
+- MP_DQN
+```bash
+python MP_DQN.py test flow_low0.json
+python MP_DQN.py test flow_low1.json
+python MP_DQN.py test flow_low2.json
+python MP_DQN.py test flow_low3.json
+python MP_DQN.py test flow_low4.json
+python MP_DQN.py test flow_medium0.json
+python MP_DQN.py test flow_medium1.json
+python MP_DQN.py test flow_medium2.json
+python MP_DQN.py test flow_medium3.json
+python MP_DQN.py test flow_medium4.json
+python MP_DQN.py test flow_high0.json
+python MP_DQN.py test flow_high1.json
+python MP_DQN.py test flow_high2.json
+python MP_DQN.py test flow_high3.json
+python MP_DQN.py test flow_high4.json
+```
 
 
 
