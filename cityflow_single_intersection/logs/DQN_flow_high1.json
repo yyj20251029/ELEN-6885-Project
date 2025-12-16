@@ -1,7 +1,0 @@
-{
-  "flow_file": "flow_high1.json",
-  "throughput": 1997,
-  "average_queue_length": 2.0372222222222223,
-  "average_waiting_time": 3.672508763144717,
-  "average_travel_time": 63.24787180771157
-}
