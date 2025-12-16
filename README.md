@@ -1,9 +1,5 @@
 # ELEN-6885-Project
-
-```bash
-ELEN 6885 Project   
-
-Tested on macOS (Apple Silicon).  
+- Tested on macOS (Apple Silicon).  
 
 I used CityFlow in my experiment, and CityFlow does not support the latest Python verson. (Python 3.10 required.)   
 Tested on macOS (Apple Silicon), and used Visual Studio Code.  
