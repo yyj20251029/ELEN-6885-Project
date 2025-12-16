@@ -1,0 +1,7 @@
+{
+  "flow_file": "flow_medium3.json",
+  "throughput": 1496,
+  "average_queue_length": 0.21444444444444444,
+  "average_waiting_time": 0.516042780748663,
+  "average_travel_time": 49.67847593582888
+}

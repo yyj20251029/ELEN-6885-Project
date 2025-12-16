@@ -1,0 +1,7 @@
+{
+  "flow_file": "flow_low1.json",
+  "throughput": 885,
+  "average_queue_length": 0.18916666666666668,
+  "average_waiting_time": 0.7694915254237288,
+  "average_travel_time": 48.77853107344633
+}
