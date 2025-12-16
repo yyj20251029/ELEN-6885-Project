@@ -66,7 +66,7 @@ python DQN.py test flow_high2.json
 python DQN.py test flow_high3.json
 python DQN.py test flow_high4.json
 ```
-- MP_DQN
+- MP_DQN test codes
 ```bash
 python MP_DQN.py test flow_low0.json
 python MP_DQN.py test flow_low1.json
